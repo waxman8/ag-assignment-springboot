@@ -9,14 +9,14 @@
 5) .jar file added to this git repo for convenience, look in jar folder. However, the app is a Maven app and can be rebuilt with mvn clean install once the source is pulled
 
 ### There are two options to start the application - both requires Java 1.8 
-**A)** - to run with "standard" tweet.txt and user.txt files: 
+**A) - to run with "standard" tweet.txt and user.txt files:**
 * place the jar file and two data files (tweet.txt and user.txt) in the same directory
 * From the command prompt, change to this directory run the java app with java -jar AGAssignment-1.0.0.jar from this directory
 
-**B)** - to run with any two files as input files: 
-place the jar file in any folder, for example /s00/anyJava/assignment
-from a command prompt (any directory) run the app by specifying the fully qualified path to the jar and the input files. For example:
-java -jar /s00/anyJava/assignment/AGAssignment-1.0.0.jar --file.user=/s00/anyJava/resources/customUser.txt --file.tweet=/s00/anyJava/resources/customTweet.txt 
+**B) - to run with any two files as input files:**
+* place the jar file in any directory, for example /s00/anyJava/assignment
+* from a command prompt (any directory) run the app by specifying the fully qualified path to the jar and the input files. For example:
+* java -jar /s00/anyJava/assignment/AGAssignment-1.0.0.jar --file.user=/s00/anyJava/resources/customUser.txt --file.tweet=/s00/anyJava/resources/customTweet.txt 
 
 Either of **A** or **B** above will start the Spring Boot application.
 At the end of the startup, you should see something like:
