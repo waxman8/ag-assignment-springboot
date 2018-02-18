@@ -35,7 +35,7 @@ public class Simulator {
     }
     
     /**
-     * @return the browserFeed
+     * @return the browserFeed string
      */
     public String getBrowserFeed() {
         return browserFeed;
@@ -47,11 +47,11 @@ public class Simulator {
      * @throws java.io.IOException let IO errors bubble up the call stack
      */
     public void simulate() throws IOException{
-        users = userRepo.getUsers();
-        tweets = tweetRepo.getTweets();
+        users = getUserRepo().getUsers();
+        tweets = getTweetRepo().getTweets();
         browserFeed = "";
         applyTweetsToUsers();
-        printCurrentStateToConsole();
+        generateAndPrintCurrentState();
     }
     
     /**
@@ -71,7 +71,7 @@ public class Simulator {
     /**
      * Print the current state to the console, showcasing the twitter-like feed
      */
-    private void printCurrentStateToConsole() {
+    private void generateAndPrintCurrentState() {
         for (Map.Entry<String,User> entry : users.entrySet()) {
             User user = entry.getValue();
             System.out.println("");
@@ -82,6 +82,20 @@ public class Simulator {
                 browserFeed = browserFeed + "&nbsp; &nbsp; @" + tweet.getUserName() + ": " + tweet.getText() + "<br>";
             }
         }
+    }
+
+    /**
+     * @return the userRepo - used only in unit testing
+     */
+    public UserRepository getUserRepo() {
+        return userRepo;
+    }
+
+    /**
+     * @return the tweetRepo - used only in unit testing
+     */
+    public TweetRepository getTweetRepo() {
+        return tweetRepo;
     }
 
 }

@@ -28,7 +28,7 @@ public class AGController {
             simulator.simulate();
             return simulator.getBrowserFeed();
         } catch (IOException ex) {
-            Logger.getLogger(AGController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AGController.class.getName()).log(Level.SEVERE,"*FILE ERROR* " + ex.toString());
             return "*FILE ERROR* " + ex.toString();
         }
     }
