@@ -10,8 +10,8 @@
 
 ### There are two options to start the application - both requires Java 1.8 
 **A)** - to run with "standard" tweet.txt and user.txt files: 
-place the jar file and two data files (tweet.txt and user.txt) in the same directory
-From the command prompt, change to this directory run the java app with java -jar AGAssignment-1.0.0.jar from this directory
+* place the jar file and two data files (tweet.txt and user.txt) in the same directory
+* From the command prompt, change to this directory run the java app with java -jar AGAssignment-1.0.0.jar from this directory
 
 **B)** - to run with any two files as input files: 
 place the jar file in any folder, for example /s00/anyJava/assignment
