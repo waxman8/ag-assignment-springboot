@@ -22,9 +22,9 @@ Either of **A** or **B** above will start the Spring Boot application.
 At the end of the startup, you should see something like:
 Started AGAssignmentApplication in 2.191 seconds (JVM running for 2.583)
 
-To confirm that the web application is running, go to [Readiness Check](http://localhost:8080)
+To confirm that the web application is running, go to [Readiness Check](http://localhost:8080) http://localhost:8080
 
-To run the simulation, go to [Simulation](http://localhost:8080/simulate) 
+To run the simulation, go to [Simulation](http://localhost:8080/simulate) http://localhost:8080/simulate
 It will produce the twitter-like feed in the browser as well as at the console
 
 *Note:* Should you wish to invoke the simulation with different files, the application can be left running and after changing / replacing the input files in the same location where they were specified to the app, refresh the page in the browser to see the changes.
