@@ -6,6 +6,7 @@
 (just how important are these tweets :-))
 3) When processing the tweet file, tweets of more than 140 characters get truncated to 140 characters and not ignored / bypassed
 4) An IO error is a big deal and these are left to bubble all the way to the console 
+5) .jar file added to this git repo for convenience, look in jar folder. However, the app is a Maven app and can be rebuilt with mvn clean install once the source is pulled
 
 ### There are two options to start the application - both requires Java 1.8 
 **A)** - to run with "standard" tweet.txt and user.txt files
